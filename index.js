@@ -1,8 +1,11 @@
 let idades = [];// variável para idades declarada.
-let idade = 0;// variável para idade declarada.
+let idade;// variável para idade declarada.
 
 do{
 
-    
+    for(i = 0; i < 3; i++ ){
+        
+
+    }
 
 }while()
