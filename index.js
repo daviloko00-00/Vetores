@@ -18,7 +18,7 @@ let posicaoMaiorIdade = 0;
 for (let i = 0; i < 4; i++) {
     if (idades[i] > maiorIdade) {
         maiorIdade = idades[i];
-        posicaoMaiorIdade = i; // Aqui salva a posição do maior valor
+        posicaoMaiorIdade = i + 1; // Aqui salva a posição do maior valor
     }
 }
 alert(`A maior idade é = ${maiorIdade}, posição ${posicaoMaiorIdade}° lugar`);
