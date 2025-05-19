@@ -1,24 +1,25 @@
-let idades = [];
-let posicao = [];// variável para idades declarada.
+let nomes = [];
+let sexos = [];
+let salarios = [];
 
-
-for (i = 0; i < 4; i++) {
-    let idade;
+for (let i = 0; i < 5; i++) {
+    letnome = prompt("Digite o nome do funcionário:");
+    let sexo;
     do {
-        idade = parseFloat(prompt(`Digite a idade ${i+1}`))
-        if (isNaN(idade) || idade < 0 ) {
-            alert("Idade inválida, digite novamente");
+        sexo = prompt("Digite o sexo do funcionário (M/F):").toUpperCase();
+        if (sexo !== "M" && sexo !== "F") {
+            alert("Sexo inválido. Digite M para masculino ou F para feminino.");
         }
-    } while (isNaN(idade) || idade < 0 );
-    idades[i] = idade
+    } while (sexo !== "M" && sexo !== "F");
+    let salario;
+    do {
+        salario = parseFloat(prompt("Digite o salário do funcionário:"));
+        if (isNaN(salario) || salario <= 0) {
+            alert("Salário inválido. Digite um salário positivo.")
+        }
+    }while (isNaN(salario) || salario <= 0);
+    //Armazenando os dados em arrays já declarados.
+    nomes.push(nome);
+    sexos.push(sexo);
+    salarios.push(salario);
 }
-let maiorIdade = idades[0];
-let posicaoMaiorIdade = 0;
-
-for (let i = 0; i < 4; i++) {
-    if (idades[i] > maiorIdade) {
-        maiorIdade = idades[i];
-        posicaoMaiorIdade = i + 1; // Aqui salva a posição do maior valor
-    }
-}
-alert(`A maior idade é = ${maiorIdade}, posição ${posicaoMaiorIdade}° lugar`);
