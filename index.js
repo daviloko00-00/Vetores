@@ -33,6 +33,9 @@ function listarnomealtura() {
             posMaior = i;
         }
     }
+    texto += `\nMaior altura:  + ${nomesAlturas[posMaior].nome},  ${maiorAltura} na posição ${posMaior + 1}`;
+    alert(texto);
+    console.log(texto);
 }
 
 function menu() {
