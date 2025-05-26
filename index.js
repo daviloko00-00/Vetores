@@ -36,7 +36,7 @@ function listarnomealtura() {// função para listagem os nomes e alturas cadast
         if (nomesAlturas[i].altura > maiorAltura) {// verifica se a altura atual é maior que a maior altura
             maiorAltura = nomesAlturas[i].altura;
             posMaior = i;
-        } else if (nomesAlturas[i].altura < menorAltura){// verifica se a altura atual é menor que a menor altura
+        } else if (nomesAlturas[i].altura < menorAltura) {// verifica se a altura atual é menor que a menor altura
             menorAltura = nomesAlturas[i].altura;
             posMenor = i;
         }
