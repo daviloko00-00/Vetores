@@ -44,6 +44,7 @@ function listarnomealtura() {// função para listagem os nomes e alturas cadast
     texto += `\nMaior altura:  + ${nomesAlturas[posMaior].nome},  ${maiorAltura} na posição ${posMaior + 1}\n Menor altura: ${nomesAlturas[posMenor].nome}, ${menorAltura} na posição ${posMenor + 1}`;// exibe as maiores e menores alturas com nomes e posições.
     alert(texto);
     console.log(texto);
+    menu();
 }
 
 function menu() {// Função de menu para melhor organização e controle de opções
