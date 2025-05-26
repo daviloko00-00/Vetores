@@ -19,16 +19,18 @@ for (let i = 0; i < 5; i++) {
         }
     } while (isNaN(salario) || salario < 0);
     // Armazenar os dados nos arraws
-    nomes.push(nome);
-    sexos.push(sexo);
-    salarios.push(salario);
+   nomes[i] = nome;
+    sexos[i] = sexo;
+    salarios[i] = salario;
+
 }
 // Filtrar e exibir funcionárias mulheres com salário maior que R$5.000
 let resultado = "Funcionárias com salário acima de R$5.000:\n";
 let encontrou = false;
 for (let i = 0; i < 5; i++) {
     if (sexos[i] === "F" && salarios[i] > 5000) {
-        resultado += `Nome: ${nomes[i]}\n, Sexo: ${sexos[i]}\n, Salário: R$${salarios[i].toFixed(2)}\n`;
+        resultado += 
+        `Nome: ${nomes[i]},\n Sexo: ${sexos[i]},\n Salário: R$${salarios[i].toFixed(2)}\n`;
         encontrou = true;
     }
 }
