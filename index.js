@@ -14,6 +14,8 @@ function adicionarnomealtura() {
     nomesAlturas.push({ nome: nome, altura: altura });
     alert(`Nome e altura adicionados: ${nome}, ${altura}`);
     console.log(`Nome e altura adicionados: ${nome}, ${altura}`);
+    nomesAlturas[contador] = { nome: nome, altura: altura };
+    contador++;
     menu()
 }
 function listarnomealtura() {
@@ -49,7 +51,7 @@ function menu() {
                 adicionarnomealtura();
                 break;
             case 2:
-                listarNomeAltura();
+                listarnomealtura();
                 break;
             case 0:
                 alert("Saindo...");
