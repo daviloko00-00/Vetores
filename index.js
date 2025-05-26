@@ -6,7 +6,7 @@ for (let i = 0; i < 5; i++) {
     let nome = prompt(`Digite o nome do funcionário ${i + 1}:`);
     let sexo;
     do {
-        sexo = prompt(`Digite o sexo do funcionário ${i + 1} (M/F):`).toUpperCase();
+        sexo = prompt(`Digite o sexo do funcionário ${i + 1} (M/F):`).toUpperCase();// pra deixar letr maiuscula;
         if (sexo !== "M" && sexo !== "F") {
             alert("Sexo inválido! Digite 'M' para masculino ou 'F' para feminino.");
         }
